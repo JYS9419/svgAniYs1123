@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> svgDashAniYs </title>
+    <style>
+
+        body {background: linear-gradient(180deg, #58AFFF 0%, #12F3D8 100%);
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        }
+
+        svg {
+            overflow: visible;
+        }
+        path {
+            stroke: #fff;
+            stroke-dasharray: 20 7;
+            stroke-dashoffset: 400; 
+            animation: drawDash 4s forwards infinite;
+        }
+        @keyframes drawDash {
+            /* to - 마지막 상태 */
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<a href="https://map.naver.com/p/directions/-/-/-/transit?c=15.00,0,0,0,dh" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="228" height="245" viewBox="0 0 228 245" fill="none">
+        <path d="M2 244.5C8.5 215.167 29 155.8 59 153C69.8333 151.667 89.8 156.2 83 185C81.5 189.833 75.6 198.4 64 194C56.6667 193.167 44.9 182 56.5 144C68.1 106 150.667 52.5 190.5 30.5L154 74.5L207 109.5L226 1.5C200.667 9.5 139.8 29.5 99 45.5L128 63" stroke="#3381A2" stroke-width="3" stroke-linejoin="round"/>
+      </svg>
+</a>
+</body>
+</html>
